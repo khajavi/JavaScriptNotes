@@ -51,5 +51,21 @@ var student = Person("Milad");		// when constructor called without new
 console.log(name); 		// "Milad"
 ```
 
+## Prototypes
 
+```javascript
+var book = {
+	title: "JavaScript Book"
+};
 
+console.log("hasOwnProperty" in book);		//true
+console.log(book.hasOwnProperty("hasOwnProperty"));		//false
+console.log(Object.prototype.hasOwnProperty("hasOwnProperty")); 		//true
+```
+
+```javascript
+var object = {};
+var prototype = Object.getPrototypeOf(object);
+
+console.log(prototype === Object.prototype); 		//true
+```
