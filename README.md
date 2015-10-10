@@ -16,7 +16,7 @@ console.log(student1 instanceof Student);			 //true
 console.log(student1.constructor === Student);	 //true
 ```
 
-```
+```javascript
 function Student(name) {
 	this.name = name;
 	this.printName = function() {
@@ -25,7 +25,7 @@ function Student(name) {
 }
 ```
 
-```
+```javascript
 function Student(name) {
 	Object.defineProperty(this, "name", {
 		get: function() {
@@ -46,7 +46,7 @@ function Student(name) {
 
 risk of changing global object:
 
-```
+```javascript
 var student = Person("Milad");		// when constructor called without new
 console.log(name); 		// "Milad"
 ```
