@@ -69,3 +69,10 @@ var prototype = Object.getPrototypeOf(object);
 
 console.log(prototype === Object.prototype); 		//true
 ```
+
+# new String('blah blah') vs 'blah blah'
+
+```
+typeof new String('blah blah') === 'object'
+typeof 'blah blah' === "string"
+```
